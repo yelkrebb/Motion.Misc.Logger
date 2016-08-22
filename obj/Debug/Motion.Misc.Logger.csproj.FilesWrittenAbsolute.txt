@@ -1,0 +1,9 @@
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/Motion.Misc.Logger.dll.mdb
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/Motion.Misc.Logger.dll
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/obj/Debug/Motion.Misc.Logger.dll
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/obj/Debug/Motion.Misc.Logger.dll.mdb
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/PCLStorage.dll
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/PCLStorage.Abstractions.dll
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/Motion.Mobile.Utilities.dll
+/Development/XamarinApps/XamTest/Motion.Misc.Logger/bin/Debug/Motion.Mobile.Utilities.dll.mdb
