@@ -6,11 +6,11 @@ namespace Motion.Misc.Logger
 {
 	public interface ILogger
 	{
-		Task Error(string msg, string className, int lineNumber, [CallerMemberName] string caller = "");
-		Task Warn(string msg, string className, int lineNumber, [CallerMemberName] string caller = "");
-		Task Info(string msg, string className, int lineNumber, [CallerMemberName] string caller = "");
-		Task Debug(string msg, string className, int lineNumber, [CallerMemberName] string caller = "");
-		Task Trace(string msg, string className, int lineNumber, [CallerMemberName] string caller = "");
+		Task Error(string msg,[CallerFilePath] string className="",[CallerLineNumber] int lineNumber=0, [CallerMemberName] string caller = "");
+		Task Warn(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "");
+		Task Info(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "");
+		Task Debug(string msg,[CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "");
+		Task Trace(string msg,[CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "");
 	}
 }
 

@@ -66,7 +66,7 @@ namespace Motion.Misc.Logger
 			_foldername = folderName;
 		}
 
-		public async Task Error(string msg, string className, int lineNumber, [CallerMemberName] string caller = "")
+		public async Task Error(string msg,[CallerFilePath] string className="",[CallerLineNumber] int lineNumber=0, [CallerMemberName] string caller = "")
 		{
 			if (_level >= LogLevel.ERROR)
 			{
@@ -75,7 +75,7 @@ namespace Motion.Misc.Logger
 			return;
 		}
 
-		public async Task Warn(string msg, string className, int lineNumber, [CallerMemberName] string caller = "")
+		public async Task Warn(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "")
 		{
 			if (_level >= LogLevel.WARN)
 			{
@@ -83,7 +83,7 @@ namespace Motion.Misc.Logger
 			}
 		}
 
-		public async Task Info(string msg, string className, int lineNumber, [CallerMemberName] string caller = "")
+		public async Task Info(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "")
 		{
 			if (_level >= LogLevel.INFO)
 			{
@@ -91,7 +91,7 @@ namespace Motion.Misc.Logger
 			}
 		}
 
-		public async Task Debug(string msg, string className, int lineNumber, [CallerMemberName] string caller = "")
+		public async Task Debug(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "")
 		{
 			if (_level >= LogLevel.DEBUG)
 			{
@@ -99,7 +99,7 @@ namespace Motion.Misc.Logger
 			}
 		}
 
-		public async Task Trace(string msg, string className, int lineNumber, [CallerMemberName] string caller = "")
+		public async Task Trace(string msg, [CallerFilePath] string className = "", [CallerLineNumber] int lineNumber = 0, [CallerMemberName] string caller = "")
 		{
 			if (_level >= LogLevel.TRACE)
 			{
